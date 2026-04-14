@@ -1,0 +1,90 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 24px;
+    gap: 20px;
+}
+
+.page-title {
+    font-size: 22px;
+    font-weight: 800;
+    color: #cce0f5;
+    letter-spacing: -.5px;
+}
+
+/* ── Demo Box ── */
+.demo-box {
+    width: 100%;
+    max-width: 420px;
+    padding: 24px 28px;
+    border-radius: 16px;
+    background: #0f1c2a;
+    border: 1px solid #141f2e;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.section-label {
+    font-size: 11px;
+    color: #3d5572;
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.muted {
+    font-size: 14px;
+    color: #3d5572;
+}
+
+/* ── Logout Button ── */
+.logout-btn {
+    padding: 10px 24px;
+    border-radius: 10px;
+    border: 1px solid #FF6B6B44;
+    background: #FF6B6B22;
+    color: #ff7675;
+    cursor: pointer;
+    font-size: 13px;
+    font-family: 'Syne', sans-serif;
+    font-weight: 600;
+    width: fit-content;
+    transition: all .2s;
+}
+
+.logout-btn:hover {
+    background: #FF6B6B33;
+}
+
+/* ── Checkbox ── */
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #cce0f5;
+    cursor: pointer;
+}
+
+.checkbox {
+    width: 16px;
+    height: 16px;
+    accent-color: #6C63FF;
+    cursor: pointer;
+}
+
+/* ── Secret Box ── */
+.secret-box {
+    padding: 16px;
+    border-radius: 10px;
+    background: #6C63FF11;
+    border: 1px solid #6C63FF44;
+}
+
+.secret-text {
+    font-size: 14px;
+    color: #a29bfe;
+    font-family: 'JetBrains Mono', monospace;
+}
