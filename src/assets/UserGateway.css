@@ -1,0 +1,131 @@
+/*DAY1 : TASK3 : Create a UserGateway component*/
+
+.gateway-wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.gateway-meta {
+    margin-bottom: 20px;
+    padding: 12px 16px;
+    border-radius: 10px;
+    background: #0f1c2a;
+    border: 1px solid #141f2e;
+    font-size: 13px;
+    color: #3d5572;
+    font-family: 'JetBrains Mono', monospace;
+    display: flex;
+    gap: 16px;
+}
+
+.gateway-meta span strong {
+    color: #cce0f5;
+}
+
+/* ── Admin Panel ── */
+.admin-panel {
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid #6C63FF44;
+    background: #6C63FF11;
+}
+
+.admin-panel h2 {
+    color: #a29bfe;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.admin-panel p {
+    color: #3d5572;
+    font-size: 14px;
+}
+
+.admin-panel strong {
+    color: #cce0f5;
+}
+
+.admin-actions {
+    margin-top: 16px;
+    display: flex;
+    gap: 10px;
+}
+
+.admin-btn {
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid #6C63FF;
+    background: transparent;
+    color: #a29bfe;
+    cursor: pointer;
+    font-size: 13px;
+    font-family: 'Syne', sans-serif;
+    transition: all .2s;
+}
+
+.admin-btn:hover {
+    background: #6C63FF22;
+}
+
+/* ── Suspended Warning ── */
+.suspended-warning {
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid #FF6B6B44;
+    background: #FF6B6B11;
+}
+
+.suspended-warning h2 {
+    color: #ff7675;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.suspended-warning p {
+    color: #3d5572;
+    font-size: 14px;
+}
+
+.suspended-warning strong {
+    color: #cce0f5;
+}
+
+.support-btn {
+    margin-top: 16px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid #FF6B6B;
+    background: transparent;
+    color: #ff7675;
+    cursor: pointer;
+    font-size: 13px;
+    font-family: 'Syne', sans-serif;
+    transition: all .2s;
+}
+
+.support-btn:hover {
+    background: #FF6B6B22;
+}
+
+/* ── Regular Panel ── */
+.regular-panel {
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid #43D9AD44;
+    background: #43D9AD11;
+}
+
+.regular-panel h2 {
+    color: #43D9AD;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.regular-panel p {
+    color: #3d5572;
+    font-size: 14px;
+}
+
+.regular-panel strong {
+    color: #cce0f5;
+}
