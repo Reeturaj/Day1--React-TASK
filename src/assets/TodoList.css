@@ -1,0 +1,113 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 24px;
+    gap: 24px;
+}
+
+.page-title {
+    font-size: 22px;
+    font-weight: 800;
+    color: #cce0f5;
+    letter-spacing: -.5px;
+}
+
+/* ── Demo Box ── */
+.demo-box {
+    width: 100%;
+    max-width: 420px;
+    padding: 24px 28px;
+    border-radius: 16px;
+    background: #0f1c2a;
+    border: 1px solid #141f2e;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.section-label {
+    font-size: 11px;
+    color: #3d5572;
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* ── Map Demo List ── */
+.demo-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.demo-item {
+    font-size: 14px;
+    color: #43D9AD;
+    font-family: 'JetBrains Mono', monospace;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: #43D9AD11;
+    border: 1px solid #43D9AD22;
+}
+
+/* ── Todo List ── */
+.todo-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    border-radius: 10px;
+    background: #07101c;
+    border: 1px solid #141f2e;
+    transition: border .2s;
+}
+
+.todo-item:hover {
+    border-color: #6C63FF44;
+}
+
+.todo-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.todo-id {
+    font-size: 11px;
+    color: #3d5572;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.todo-task {
+    font-size: 14px;
+    color: #cce0f5;
+    font-weight: 500;
+}
+
+/* ── Delete Button ── */
+.delete-btn {
+    padding: 6px 14px;
+    border-radius: 8px;
+    border: 1px solid #FF6B6B44;
+    background: #FF6B6B11;
+    color: #ff7675;
+    cursor: pointer;
+    font-size: 12px;
+    font-family: 'Syne', sans-serif;
+    font-weight: 600;
+    transition: all .2s;
+    flex-shrink: 0;
+}
+
+.delete-btn:hover {
+    background: #FF6B6B33;
+}

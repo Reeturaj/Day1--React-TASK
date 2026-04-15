@@ -14,6 +14,8 @@ import UserProfile from './pages/UserProfileDeatils';
 import CounterDetails from './pages/CounterDetails';
 import SearchBarDetails from './pages/SerchBar';
 import ConditionalRender from './pages/ConditionalRender';
+import TodoListDetails from './pages/TodoList';
+import RefDemo from './pages/RefDemo';
 
 function App() {
 
@@ -33,8 +35,11 @@ function App() {
     //DAY2 : TASK3 : Event Handling & Transitions
     //<SearchBarDetails />
     //DAY2 : TASK4 : Conditional Rendering
-    <ConditionalRender />
-
+    //<ConditionalRender />
+   //DAY2 : TASK5 : Conditional Rendering
+    //<TodoListDetails />
+    //DAY2 : TASK6 : Conditional Rendering
+    <RefDemo />
   );
 }
 
