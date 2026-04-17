@@ -1,3 +1,5 @@
+
+
 /*DAY1 : TASK2 : Re-structure to follow pattern*/
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -7,4 +9,17 @@ body {
     font-family: 'Syne', sans-serif;
     background: #07101c;
     color: #cce0f5;
+}
+
+.btn {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+:root {
+  --primary-color: #6200ee;
 }

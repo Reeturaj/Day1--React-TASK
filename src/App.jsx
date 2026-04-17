@@ -14,6 +14,11 @@ import SearchBarDetails from './day2task3/SerchBar';
 import ConditionalRender from './day2task4/ConditionalRender';
 import TodoListDetails from './day2task5/TodoList';
 import RefDemo from './day2task6/RefDemo';
+import Button from './day3task1/Button';
+import StatusCard from './day3task2/StatusCard';
+import Header from './day3task3/Header';
+import Footer from './day3task3/Footer';
+import Navbar from './day3task4/Navbar';
 
 function App() {
 
@@ -21,7 +26,7 @@ function App() {
     //DAY1 : TASK1 : Create a Dashboard component that contains three sub-components: Sidebar, MainContent, and StatusFooter.
     //<Dashboard />
     //DAY1 : TASK2 : Re-structure to follow pattern
-    <Home/>
+    // <Home/>
     //DAY1 : TASK3 : Create a UserGateway component
     //<UserGateway/>
     //DAY1 : TASK4 :Create a JSX element that displays the current year using a JavaScript new Date() object inside curly braces {}
@@ -34,10 +39,37 @@ function App() {
     //<SearchBarDetails />
     //DAY2 : TASK4 : Conditional Rendering
     //<ConditionalRender />
-   //DAY2 : TASK5 : Conditional Rendering
-   // <TodoListDetails />
+    //DAY2 : TASK5 : Conditional Rendering
+    // <TodoListDetails />
     //DAY2 : TASK6 : Conditional Rendering
-   // <RefDemo />
+    // <RefDemo />
+    //DAY3 : TASK1 
+    //<Button/>
+    //DAY3 : TASK2
+    //  <div>
+    //     <StatusCard type="success" />  {/* success or error */}
+    //   </div>
+    ///======
+    //DAY3 : TASK3
+    // <div style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
+    //   <Header />
+    //   <main style={{ flex: 1 }}>
+    //   </main>
+    //   <Footer />
+    // </div>
+    ////====
+    //Day3 : TASK4
+    <div style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
+      <Header />
+      <Navbar />
+      <main style={{ flex: 1 }}>
+      </main>
+      <Footer />
+    </div>
+    //========
+
+
+
   );
 }
 
