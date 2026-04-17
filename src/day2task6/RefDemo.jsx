@@ -1,5 +1,5 @@
 import { useRef, useEffect } from "react";
-import "../assets/RefDemo.css";
+import "./RefDemo.css";
 
 // ── Demo: button click → focus input ──
 function FocusDemo() {

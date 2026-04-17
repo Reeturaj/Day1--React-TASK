@@ -1,10 +1,5 @@
-import { useState, useEffect } from "react";
-import "../assets/Dashboard.css";
+import "./Dashboard.css";
 
-
-
- //DAY1 : TASK1 : Create a Dashboard component that contains three sub-components: Sidebar, MainContent, and StatusFooter.
- 
 const navItems = [
     { label: "Dashboard", icon: "⬡" },
     { label: "Transactions", icon: "◈" },
@@ -13,42 +8,31 @@ const navItems = [
 ];
 
 // ── SUB-COMPONENT 1: Sidebar ──
-function Sidebar({ sidebarOpen, setSidebarOpen }) {
+function Sidebar() {
     return (
-        <aside className="sidebar" style={{ width: sidebarOpen ? "220px" : "66px" }}>
-
+        <aside className="sidebar" style={{ width: "220px" }}>
             <div className="sidebar-logo">
                 <div className="sidebar-logo-icon">⬡</div>
-                {sidebarOpen && <span className="sidebar-logo-text">Demo</span>}
+                <span className="sidebar-logo-text">Demo</span>
             </div>
-
             <nav className="sidebar-nav">
                 {navItems.map(({ label, icon }) => (
                     <div key={label} className="nav-item">
                         <span className="nav-item-icon">{icon}</span>
-                        {sidebarOpen && label}
+                        {label}
                     </div>
                 ))}
             </nav>
-
-            <button className="sidebar-toggle" onClick={() => setSidebarOpen(!sidebarOpen)}>
-                {sidebarOpen ? "◀ hide" : "▶"}
-            </button>
         </aside>
     );
 }
 
 // ── SUB-COMPONENT 2: MainContent ──
-function MainContent({ time }) {
+function MainContent() {
     return (
         <div className="main-content">
             <header className="topbar">
-                <div>
-                    <div className="topbar-time">
-                        {time.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" })} · {time.toLocaleTimeString()}
-                    </div>
-                    <h1 className="topbar-title">Dashboard</h1>
-                </div>
+                <div className="topbar-title">Dashboard</div>
                 <div className="topbar-right">
                     <div className="status-badge">
                         <span className="status-dot" />
@@ -72,19 +56,11 @@ function StatusFooter() {
 
 // ── ROOT: Dashboard ──
 function Dashboard() {
-    const [time, setTime] = useState(new Date());
-    const [sidebarOpen, setSidebarOpen] = useState(true);
-
-    useEffect(() => {
-        const t = setInterval(() => setTime(new Date()), 1000);
-        return () => clearInterval(t);
-    }, []);
-
     return (
         <div className="app-wrapper">
             <div className="app-body">
-                <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
-                <MainContent time={time} />
+                <Sidebar />
+                <MainContent />
             </div>
             <StatusFooter />
         </div>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../assets/ConditionalRender.css";
+import "./ConditionalRender.css";
 
 //DAY2 : TASK4 : Conditional Rendering
 

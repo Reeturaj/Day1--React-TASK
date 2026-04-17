@@ -1,4 +1,4 @@
-import "../assets/UserGateway.css";
+import "./UserGateway.css";
 
 //DAY1 : TASK3 : Create a UserGateway component
 const user = {

@@ -1,4 +1,4 @@
-import "../assets/UserProfile.css";
+import "./UserProfile.css";
 
 //DAY2 : TASK1 : Functional Components & Props
 
@@ -37,7 +37,7 @@ function DestructureSample({ username = "Guest" }) {
 }
 
 // ── PARENT ──
- function UserProfileDetails() {
+ function UserProfile() {
     return (
         <div className="profiles-wrapper">
             <h1 className="profiles-title">Props Demo</h1>
@@ -54,4 +54,4 @@ function DestructureSample({ username = "Guest" }) {
     );
 }
 
-export default UserProfileDetails;
+export default UserProfile;

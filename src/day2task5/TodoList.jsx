@@ -1,10 +1,8 @@
-import "../assets/TodoList.css";
+import "./TodoList.css";
 
 const todos = [
     { id: 1, task: "Learn React" },
-    { id: 2, task: "Build a Todo App" },
-    { id: 3, task: "Master useState" },
-    { id: 4, task: "Deploy to Production" },
+    { id: 2, task: "Build App" },
 ];
 
 // ── Demo: map array to UI ──

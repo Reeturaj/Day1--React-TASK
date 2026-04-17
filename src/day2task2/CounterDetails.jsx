@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../assets/Counter.css";
+import "./Counter.css";
 
 // ── Light Switch Demo ──
 function LightSwitch() {

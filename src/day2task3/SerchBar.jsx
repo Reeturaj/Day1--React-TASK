@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../assets/SearchBar.css";
+import "./SearchBar.css";
 
 //DAY2 : TASK3 : Event Handling & Transitions
 
